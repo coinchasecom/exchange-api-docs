@@ -55,7 +55,7 @@
     
     4.  计算签名值
         用HmacSHA256算法，以secretKey为钥匙给data签名，得到一个返回值value，
-        然后使用base64算法，把value转换成base64格式的字符串signature
+        然后使用base64算法的standard base64 encoding，把value转换成base64格式的字符串signature
         signature就是得到的签名值
     
     发起请求:
