@@ -15,7 +15,7 @@
     以买入接口举例/x/v1/order/buy
     
     签名函数:
-    function Sign(mapParams, method, hostname, path, secretKey string) signature
+    function Sign(mapParams, method, hostname, path, secretKey) signature
     
     Sign函数传参
     mapParams:      类型:Map, 不管是GET还是POST，都需要把所有参数保存到map。如?pair=ABC/USDT
@@ -176,7 +176,7 @@
     注意: 签名的字段有pair和timestamp
     ```
 
-- 查询我的未成交完毕的订单
+- 查询我的未成交订单（包括一点没成交,部分成交）
     ```
     path: /x/v1/order/pending
     签名: 需要
@@ -219,7 +219,7 @@
     }
     ```
 
-- 查询我的历史订单（包括已撤销和已成交完毕）
+- 查询我的历史订单（包括已撤销,已成交完毕）
     ```
     path: /x/v1/order/history
     签名: 需要
