@@ -63,7 +63,7 @@
     
     注意事项:
     1.  每个需要签名的接口都需要包含timestamp和signature字段
-    2.  在签名签就需要把timestamp字段设置好
+    2.  在签名前就需要把timestamp字段设置好
     
 # APIs
 ### Order
