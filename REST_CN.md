@@ -1,5 +1,6 @@
 # 概要
     域名: https://api.coinchase.com
+    API Key: https://coinchase.com/me/user_api
     
     需要签名的接口如下:
     /x/v1/order/buy
